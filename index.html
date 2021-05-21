@@ -4,18 +4,18 @@
 	</head>
 	<body>
 		<H1>SIGN IN / SIGN UP</H1>
-		<form>
+		<form action="form_data.php" method="get">
 			<label>Mobile Number</label>
 			<table>
 				<tr>
 				  <td>
-					<select id="kodearea">
-						<option>+6221</option>
-						<option>+6231</option>
+					<select id="kodearea" name="kodearea">
+						<option values="+6221">+6221</option>
+						<option values="+6231">+6231</option>
 					</select>
 				  </td>
 				  <td>
-					<input id="nomor" type="number">
+					<input id="nomor" type="number" name="nomor">
 				  </td>
 				</tr>
 				<tr>
@@ -25,8 +25,8 @@
 				  </td>
 				</tr>
 				<tr>
-				  <td colspan=2 allign="center">
-					<button id="submit_btn type="button">Sign In / Sign Up</button>
+				  <td colspan=2>
+					<input type="submit" value="Sign In / Sign Up">
 				  </td>
 				</tr>
 			</table>
